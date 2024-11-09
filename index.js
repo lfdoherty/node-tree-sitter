@@ -914,3 +914,11 @@ module.exports.Tree = Tree;
 module.exports.SyntaxNode = SyntaxNode;
 module.exports.TreeCursor = TreeCursor;
 module.exports.LookaheadIterator = LookaheadIterator;
+
+module.exports.getNodeTypeNamesById = function(language){
+  return binding.getNodeTypeNamesById(language);
+} 
+module.exports.getNodeFieldNamesById = function(language){
+  return binding.getNodeFieldNamesById(language);
+}
+

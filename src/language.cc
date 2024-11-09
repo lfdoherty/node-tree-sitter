@@ -64,11 +64,11 @@ Napi::Value GetNodeTypeNamesById(const Napi::CallbackInfo &info) {
   for (uint32_t i = 0; i < length; i++) {
     const char *name = ts_language_symbol_name(language, i);
     TSSymbolType type = ts_language_symbol_type(language, i);
-    if (type == TSSymbolTypeRegular) {
+    //if (type == TSSymbolTypeRegular) {
       result[i] = String::New(env, name);
-    } else {
-      result[i] = env.Null();
-    }
+    //} else {
+      //result[i] = env.Null();
+    //}
   }
 
   return result;

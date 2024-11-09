@@ -1,5 +1,5 @@
 {
-  "name": "tree-sitter",
+  "name": "@lfdoherty/tree-sitter",
   "version": "0.22.0",
   "description": "Incremental parsers for node",
   "author": "Max Brunsfeld",
